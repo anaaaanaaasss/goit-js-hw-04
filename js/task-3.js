@@ -1,12 +1,18 @@
-function getElementWidth(content, padding, border) {
-  const contentWidth = parseFloat(content);
-  const paddingWidth = parseFloat(padding) * 2; // лівий + правий
-  const borderWidth = parseFloat(border) * 2;   // лівий + правий
+const profile = {
+  username: "Jacob",
+  playTime: 300,
+  
+  changeUsername(newName) {
+    this.username = newName;
+  },
 
-  return contentWidth + paddingWidth + borderWidth;
-}
+  updatePlayTime(hours) {
+    this.playTime += hours;
+  }
+};
 
 // Перевірка
-console.log(getElementWidth("50px", "8px", "4px")); // 74
-console.log(getElementWidth("60px", "12px", "8.5px")); // 101
-console.log(getElementWidth("200px", "0px", "0px")); // 200
+const profile = {
+    username: "Jacob",
+  playTime: 300,
+};
